@@ -54,6 +54,12 @@ public class MainClassRPGPartyPlanner {
                     adventureParty.printCharacterInfo(scan);
                     break;
                 case 5:
+                    adventureParty.assignMentor(scan);
+                    break;
+                case 6:
+                    adventureParty.showMentors();
+                    break;
+                case 7:
                     quit = true;
                     break;
             }
@@ -68,7 +74,9 @@ public class MainClassRPGPartyPlanner {
         System.out.println("\t 2 - Remove character.");
         System.out.println("\t 3 - Show adventure party.");
         System.out.println("\t 4 - Show character information.");
-        System.out.println("\t 5 - End application");
+        System.out.println("\t 5 - Assign mentor character");
+        System.out.println("\t 6 - Show mentor characters");
+        System.out.println("\t 7 - End application");
     }
 
     public static void addCharacter(){

@@ -2,6 +2,7 @@ public class Character {
     private String name;
     private int age;
     private String ancestry;
+    private boolean isMentor = false;
 
     public void showInfo(){
         System.out.println(name);
@@ -31,5 +32,11 @@ public class Character {
     }
     public void setAncestry(String ancestry){
         this.ancestry = ancestry;
+    }
+    public boolean getIsMentor(){
+        return isMentor;
+    }
+    public void setIsMentor(boolean isMentor){
+        this.isMentor = isMentor;
     }
 }
